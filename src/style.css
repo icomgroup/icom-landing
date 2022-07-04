@@ -320,7 +320,7 @@ nav ul li:hover {
     transform: translateX(-50%);
     transition: 0.3s;
 }
-
+}
 .icons-menu{
   
     flex-direction: row !important;
