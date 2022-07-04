@@ -296,14 +296,14 @@ nav ul li:hover {
 
 .projects{
   position: absolute;
-    bottom: -1%;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
     transition: 0.3s;
 }
 .projects i{
   animation: bouncing 1.5s infinite;
-  color: rebeccapurple;
+  color: white;
 }
 
 /* @media(max-width:992px){
