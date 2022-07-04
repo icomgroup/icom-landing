@@ -9,6 +9,8 @@ import { useState } from "react";
 
 import Carousel from "react-elastic-carousel";
 import Item from "./components/Item";
+import "./style.css";
+
 
 
 const breakPoints = [
