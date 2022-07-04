@@ -74,7 +74,7 @@ export default function Projects() {
           <button onClick={() => {setFlag(1)
             setIsOpen(true)
             
-          }}> <img src={require("./assets/projects/mobile/donuts/0.jpg")} className='custom-img'/></button> 
+          }}> <img src={require("./assets/projects/mobile/donuts/0.jpg")} className='custom-img' alt={"Web"}/></button> 
                     <p style={{bottom:"2.5rem"}}>تصميم وبرمجة التطبيقات</p>
                     
           </Item>
@@ -83,7 +83,7 @@ export default function Projects() {
             setFlag(2)
             setIsOpen(true)
             
-          }}> <img src={require("./assets/projects/social/perfumes/0.png") }/></button> 
+          }}> <img src={require("./assets/projects/social/perfumes/0.png") } alt={"mobile"}/></button> 
                     <p style={{textAlign:"center"}}>التسويق عبر منصات<br/> التواصل الاجتماعي</p>
           </Item>
           <Item className="item">
@@ -91,7 +91,7 @@ export default function Projects() {
             setFlag(3)
             setIsOpen(true)
             
-          }}> <img src={require("./assets/projects/branding/chef-gabi/0.jpg")}/></button> 
+          }}> <img src={require("./assets/projects/branding/chef-gabi/0.jpg")} alt={"Social"}/></button> 
                     <p style={{textAlign:"center"}}>تصميم العلامة التجاربة <br/> والهوية البصرية </p>
                     
           </Item>
@@ -100,7 +100,7 @@ export default function Projects() {
             setFlag(4)
             setIsOpen(true)
             
-          }}>   <img src={require("./assets/projects/interior/inner/0.jpg")}/></button>
+          }}>   <img src={require("./assets/projects/interior/inner/0.jpg")} alt={"logo"}/></button>
                     <p style={{bottom:"2.5rem"}}>تصميم داخلي</p>
           </Item>
         </Carousel>
