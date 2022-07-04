@@ -928,6 +928,14 @@ direction: ltr;
   -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
 }
 
+@media (min-width: 414px) and (max-width: 992px){
+  .icom-landing .FYzfm{
+      height: 100% !important;
+      width: 80% !important;
+    }
+
+}
+
 
 
 /* Whats APP */
@@ -1090,12 +1098,4 @@ direction: ltr;
   }
   
 }
-@media (min-width: 414px) and (max-width: 992px){
-  .icom-landing .FYzfm{
-      height: 100% !important;
-      width: 80% !important;
-    }
 
-}
-.fYXCdu{
-  display: none !important;}
