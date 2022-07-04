@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import "./style.css";
-import "./item.css"
+import "./components/items.css"
 import "./all.css";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
