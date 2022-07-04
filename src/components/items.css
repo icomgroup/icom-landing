@@ -141,10 +141,9 @@
   
 }
 
-/* Test  */
 
 @media (max-width:992px){
-  .icom-landing .FYzfm{
+  .icom-landing .sc-ftvSup{
       height: 100% !important;
       width: 80% !important;
     }
