@@ -296,21 +296,30 @@ nav ul li:hover {
 
 .projects{
   position: absolute;
-    bottom: 10%;
+    bottom: -1rem;
     left: 50%;
     transform: translateX(-50%);
     transition: 0.3s;
 }
 .projects i{
   animation: bouncing 1.5s infinite;
-  color: white;
+  color: rebeccapurple;
 }
 
-/* @media(max-width:992px){
+
+
+@media(max-width:992px){
   .projects i{
-    display: none;
+   color:white;
+    
   }
-} */
+  .projects{
+  position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
 
 .icons-menu{
   
