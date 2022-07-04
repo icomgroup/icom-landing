@@ -128,14 +128,14 @@
 }
 }
 @media(min-width: 993px){
-  .icom-landing .FYzfm{
+  .icom-landing .sc-ftvSup{
     height: 100% !important;
   }
 
 }
 
 @media(min-width: 1402px){
-  .icom-landing .FYzfm{
+  .icom-landing .sc-ftvSup{
     height: auto !important;
   }
   
