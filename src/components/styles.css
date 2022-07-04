@@ -124,3 +124,23 @@
 
 }
 }
+@media(min-width: 993px){
+  .icom-landing .FYzfm{
+    height: 100% !important;
+  }
+
+}
+
+@media(min-width: 1402px){
+  .icom-landing .FYzfm{
+    height: auto !important;
+  }
+  
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 992px){
+  .icom-landing .FYzfm{
+      height: 100% !important;
+      width: 80% !important;
+    }
+
+}

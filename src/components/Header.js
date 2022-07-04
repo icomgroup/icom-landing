@@ -35,7 +35,7 @@ export default function Header() {
               <li>عن الشركة</li>
             </a>
             <a href="#portfolio">
-              <li>خدماتنا</li>
+              <li>أعمالنا</li>
             </a>
            
           </ul>
@@ -80,7 +80,7 @@ export default function Header() {
                     isOpen ? "hidemenu" : "showmenu"
                   }`}
                 >
-                  خدماتنا
+                  أعمالنا
                 </li>
               </a>
               

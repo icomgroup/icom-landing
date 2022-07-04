@@ -144,7 +144,7 @@ nav ul li:hover {
   top: 0;
   right: 0;
   width: 100vw;
-  height: 85vh;
+  height:60vh;
   background-color: #EE1B5E;
   opacity: 0.85;
 }
@@ -217,6 +217,10 @@ nav ul li:hover {
 .landing {
   padding-bottom: 80px;
   position: relative;
+  height: 85vh;
+}
+@media(min-width:726px ){
+  
 }
 .landing::before {
   content: "";
@@ -292,7 +296,7 @@ nav ul li:hover {
 
 .projects{
   position: absolute;
-    bottom: -10%;
+    bottom: -1%;
     left: 50%;
     transform: translateX(-50%);
     transition: 0.3s;
@@ -302,11 +306,11 @@ nav ul li:hover {
   color: rebeccapurple;
 }
 
-@media(max-width:992px){
+/* @media(max-width:992px){
   .projects i{
     display: none;
   }
-}
+} */
 
 .icons-menu{
   
@@ -415,13 +419,13 @@ margin-bottom: 2rem;
 .squares{
   position: absolute;
   top: 88%;
-  right:  -10%;
+  right:  -9%;
   z-index: -1;
 }
 .squares2 {
   position: absolute;
   bottom: 88%;
-  right: -10%;
+  right: -9%;
   z-index: -1;
 }
 .square-line{
