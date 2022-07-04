@@ -22,8 +22,8 @@ const breakPoints = [
 
 const images = [
     { title: "تصميم و برمجة مواقع الويب", caption: "1", url: require("./assets/projects/web/servant/MergedImages.jpg") },
-    { title: "تصميم وبرمجة  تطبيقات الهاتف المحمول", caption: "2", url: require("./assets/projects/mobile/donuts/MergedImages (1).jpg") },
-    { title: "التسويق عبر منصات التواصل الاجتماعي", caption: "3", url: require("./assets/projects/social/perfumes/MergedImages.jpg") },
+    { title: "تصميم وبرمجة  تطبيقات الهاتف المحمول", caption: "2", url: require("./assets/projects/mobile/donuts/MergedImages (1).png") },
+    { title: "التسويق عبر منصات التواصل الاجتماعي", caption: "3", url: require("./assets/projects/social/perfumes/MergedImages.png") },
     { title: "تصميم العلامة التجاربة", caption: "4", url: require("./assets/projects/branding/chef-gabi/MergedImages (4).jpg") },
     { title: "تصميم داخلي", caption: "5", url: require("./assets/projects/interior/inner/MergedImages (2).jpg") }
   ];
