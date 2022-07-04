@@ -137,7 +137,7 @@
   }
   
 }
-@media only screen and (min-device-width: 414px) and (max-device-width: 992px){
+@media (min-device-width: 414px) and (max-device-width: 992px){
   .icom-landing .FYzfm{
       height: 100% !important;
       width: 80% !important;
