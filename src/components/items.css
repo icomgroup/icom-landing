@@ -26,7 +26,7 @@
 }
 
 @media(max-width:762px){
-  .sc-ftvSup{
+  .icom-landing .sc-ftvSup{
         height: 100% !important;
   }
   .App button{
