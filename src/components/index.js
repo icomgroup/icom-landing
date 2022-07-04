@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
 import "../style.css";
-import "./item.css";
+import "./items.css";
 
 
 const breakPoints = [
