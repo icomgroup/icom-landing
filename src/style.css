@@ -874,7 +874,7 @@ direction: ltr;
 
 /* Test  */
 
-@media (min-width: 414px) and (max-width: 992px){
+@media (min-width:414px) and (max-width:992px){
   .icom-landing .FYzfm{
       height: 100% !important;
       width: 80% !important;
@@ -982,7 +982,7 @@ direction: ltr;
 .App img{
   width: 100%;
 }
-@media(min-width: 1300px){
+@media(min-width:1300px){
   .App img{
     width: 80%;
   }
