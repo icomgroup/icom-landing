@@ -1,7 +1,7 @@
+import axios from "axios";
 import React from "react";
 import { ReactDOM } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 
 import Popup from 'reactjs-popup';
 
@@ -30,6 +30,7 @@ export default function Contact() {
     
   }
  console.log(flag)
+ console.log(formData)
   
  let handleSubmit = async (e) => {
     
@@ -71,19 +72,7 @@ export default function Contact() {
 }else {
   console.log('error')
 }
-   } catch (err) {
-     console.log(err);
-   }
-
- }else{
-  console.log("flag is false")
-  
-       
-  
- }
-
 }
-  
 
   function handleChange(event) {
     
