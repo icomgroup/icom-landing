@@ -38,7 +38,7 @@ export default function Contact() {
    
      let res = await fetch("https://icom-agency.com/api/add-message", {
        method: 'POST',
-       data:{
+       body:{
          name: formData.name,
          email: formData.email,
          phone: formData.phone,
