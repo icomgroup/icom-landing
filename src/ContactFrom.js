@@ -277,7 +277,7 @@ export default function Contact() {
               required
             />
             <span className="enter-number">  </span>
-            <label htmlFor="comments" className="labels">
+            <label htmlFor="message" className="labels">
               الرسالة
             </label>
             <textarea
