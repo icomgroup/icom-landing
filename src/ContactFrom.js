@@ -33,20 +33,23 @@ export default function Contact() {
  let handleSubmit = async (e) => {
     
    e.preventDefault();
-   if(flag === true){
+   if (flag){
+   if(formData.email === ''){
+    formData.email = 'ْ';
+   }
+   if(formData.message === ''){
+    formData.message = 'ْ';
+   }
+   if(formData.service === ''){
+    formData.service = 'تصميم وبرمجة مواقع الويب';
+   }
+  
    try {
-   
-     let res = await fetch("https://icom-agency.com/api/add-message", {
-       method: 'POST',
-       body:JSON.stringify({
-         name: formData.name,
-         email: formData.email,
-         phone: formData.phone,
-         message: formData.message,
-         service: formData.service
-        })
-     });
+    
+     let res = await axios.post("https://icom-agency.com/api/add-message",formData
+      );
      if (res.status === 200) {
+      console.log(res.status)
        setFormData((prevFormData) => {
          return {
            ...prevFormData
@@ -54,10 +57,19 @@ export default function Contact() {
          
        });
        document.querySelector('.clicked-button').click()
-       setTimeout(()=>window.location.replace(res.url),3000)
+      //  setTimeout(()=>window.location.replace(res.url),3000)
      } else {
        console.log("Some error occured");
      }
+   } catch (err) {
+     console.log(err.response);
+   }
+
+
+
+}else {
+  console.log('error')
+}
    } catch (err) {
      console.log(err);
    }
