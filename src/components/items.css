@@ -69,6 +69,8 @@
 .App-back{
   background-color: #2D1D5B;
   height: 80vh;
+  margin-bottom: 20vh;
+
 }
 .App-back button{
   display: block ;
