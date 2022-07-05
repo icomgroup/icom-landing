@@ -54,7 +54,7 @@ export default function Contact() {
          
        });
        document.querySelector('.clicked-button').click()
-       setTimeout(()=>window.location.replace('https://icom-digital.net/'),3000)
+       setTimeout(()=>window.location.replace(res.url),3000)
      } else {
        console.log("Some error occured");
      }
