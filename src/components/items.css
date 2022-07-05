@@ -60,12 +60,7 @@
     font-family: "Tajawal",sans-serif;
    
 }
-@media(max-width:762px){
-  .App-back .item p{
-    position: absolute !important;
-  bottom: -3rem !important;
-}
-}
+
 
 .App-back .item img{
   cursor: pointer;
