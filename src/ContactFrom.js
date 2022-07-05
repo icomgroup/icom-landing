@@ -38,13 +38,13 @@ export default function Contact() {
    
      let res = await fetch("https://icom-agency.com/api/add-message", {
        method: 'POST',
-       body:{
+       body:JSON.stringify({
          name: formData.name,
          email: formData.email,
          phone: formData.phone,
          message: formData.message,
          service: formData.service
-        }
+        })
      });
      if (res.status === 200) {
        setFormData((prevFormData) => {
