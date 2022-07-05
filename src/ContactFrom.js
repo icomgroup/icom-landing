@@ -285,7 +285,7 @@ export default function Contact() {
               placeholder="ادخل نبذة عن مشروعك"
               onChange={handleChange}
               id="message"
-              name="comments"
+              name="message"
             />
             <button type="submit">ارسال</button>
           </form>
