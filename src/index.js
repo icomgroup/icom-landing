@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import NotFound from './NotFound.js';
+import NotFound from './404.js';
 import "./style.css";
 import "./components/items.css"
 import "./all.css";
