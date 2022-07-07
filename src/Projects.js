@@ -21,7 +21,7 @@ const breakPoints = [
 ];
 
 const images = [
-    { title: "تصميم و برمجة مواقع الويب", caption: "1", url: require("./assets/projects/web/servant/MergedImages.jpg") },
+    { title: "تصميم و برمجة مواقع الويب", caption: "1", url: require("./assets/projects/web/servant/MergedImages.png") },
     { title: "تصميم وبرمجة  تطبيقات الهاتف المحمول", caption: "2", url: require("./assets/projects/mobile/donuts/MergedImages (1).png") },
     { title: "التسويق عبر منصات التواصل الاجتماعي", caption: "3", url: require("./assets/projects/social/perfumes/MergedImages.png") },
     { title: "تصميم العلامة التجاربة", caption: "4", url: require("./assets/projects/branding/chef-gabi/MergedImages (4).jpg") },
