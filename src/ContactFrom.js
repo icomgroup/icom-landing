@@ -251,19 +251,21 @@ export default function Contact() {
               name="service"
               required
             >
-              <option value="web">تصميم وبرمجة مواقع الويب</option>
-              <option value="mobile">
+              <option value="تصميم وبرمجة مواقع الويب">
+تصميم وبرمجة مواقع الويب
+  </option>
+              <option value="تصميم وبرمجة تطبيقات الهاتف المحمول">
                 تصميم وبرمجة تطبيقات الهاتف المحمول
               </option>
-              <option value="social">
+              <option value="التسويق عبر منصات التواصل الاجتماعي">
                 التسويق عبر منصات التواصل الاجتماعي
               </option>
-              <option value="iden">
+              <option value="تصميم العلامة التجارية والهوية البصرية">
                 تصميم العلامة التجارية والهوية البصرية
               </option>
-              <option value="seo">تهيئة محركات البحث</option>
-              <option value="int">تصميم داخلي</option>
-              <option value="out">الدعم الفني</option>
+              <option value="تهيئة محركات البحث">تهيئة محركات البحث</option>
+              <option value="تصميم داخلي">تصميم داخلي</option>
+              <option value="الدعم الفني">الدعم الفني</option>
             </select>
             <label htmlFor="phone" className="labels">
               رقم الجوال
