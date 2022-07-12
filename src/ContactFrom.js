@@ -29,8 +29,7 @@ export default function Contact() {
     document.querySelector('.enter-number').innerHTML = ''
     
   }
- console.log(flag)
- console.log(formData)
+ 
   
  let handleSubmit = async (e) => {
     
