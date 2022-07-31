@@ -374,7 +374,8 @@ margin-bottom: 2rem;
 @media (max-width:996px) {
   .rectangle-and-form {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 100px;
   }
   form{
     width: 100%;

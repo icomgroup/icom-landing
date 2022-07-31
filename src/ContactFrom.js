@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 import { ReactDOM } from "react";
 import { useNavigate } from "react-router-dom";
@@ -8,7 +9,7 @@ import Popup from 'reactjs-popup';
 export default function Contact() {
 
   
-
+ 
   
   const [formData, setFormData] = React.useState({
     name: "",
@@ -29,24 +30,28 @@ export default function Contact() {
     
   }
  console.log(flag)
+ console.log(formData)
   
  let handleSubmit = async (e) => {
     
    e.preventDefault();
-   if(flag === true){
+   if (flag){
+   if(formData.email === ''){
+    formData.email = 'ْ';
+   }
+   if(formData.message === ''){
+    formData.message = 'ْ';
+   }
+   if(formData.service === ''){
+    formData.service = 'تصميم وبرمجة مواقع الويب';
+   }
+  
    try {
-   
-     let res = await fetch("https://icom-agency.com/api/add-message", {
-       method: 'POST',
-       data:{
-         name: formData.name,
-         email: formData.email,
-         phone: formData.phone,
-         message: formData.message,
-         service: formData.service
-        }
-     });
+    
+     let res = await axios.post("https://icom-agency.com/api/add-message",formData
+      );
      if (res.status === 200) {
+      console.log(res.status)
        setFormData((prevFormData) => {
          return {
            ...prevFormData
@@ -54,23 +59,20 @@ export default function Contact() {
          
        });
        document.querySelector('.clicked-button').click()
-       setTimeout(()=>window.location.replace('https://icom-digital.net/'),3000)
+       setTimeout(()=>window.location.replace(res.url),3000)
      } else {
        console.log("Some error occured");
      }
    } catch (err) {
-     console.log(err);
+     console.log(err.response);
    }
 
- }else{
-  console.log("flag is false")
-  
-       
-  
- }
 
+
+}else {
+  console.log('error')
 }
-  
+}
 
   function handleChange(event) {
     
@@ -249,19 +251,19 @@ export default function Contact() {
               name="service"
               required
             >
-              <option value="web">تصميم وبرمجة مواقع الويب</option>
-              <option value="mobile">
+              <option value="تصميم وبرمجة مواقع الويب">تصميم وبرمجة مواقع الويب</option>
+              <option value="تصميم وبرمجة تطبيقات الهاتف المحمول">
                 تصميم وبرمجة تطبيقات الهاتف المحمول
               </option>
-              <option value="social">
+              <option value="التسويق عبر منصات التواصل الاجتماعي">
                 التسويق عبر منصات التواصل الاجتماعي
               </option>
-              <option value="iden">
+              <option value="تصميم العلامة التجارية والهوية البصرية">
                 تصميم العلامة التجارية والهوية البصرية
               </option>
-              <option value="seo">تهيئة محركات البحث</option>
-              <option value="int">تصميم داخلي</option>
-              <option value="out">الدعم الفني</option>
+              <option value="تهيئة محركات البحث">تهيئة محركات البحث</option>
+              <option value="تصميم داخلي">تصميم داخلي</option>
+              <option value="الدعم الفني">الدعم الفني</option>
             </select>
             <label htmlFor="phone" className="labels">
               رقم الجوال
@@ -277,7 +279,7 @@ export default function Contact() {
               required
             />
             <span className="enter-number">  </span>
-            <label htmlFor="comments" className="labels">
+            <label htmlFor="message" className="labels">
               الرسالة
             </label>
             <textarea
@@ -285,7 +287,7 @@ export default function Contact() {
               placeholder="ادخل نبذة عن مشروعك"
               onChange={handleChange}
               id="message"
-              name="comments"
+              name="message"
             />
             <button type="submit">ارسال</button>
           </form>
