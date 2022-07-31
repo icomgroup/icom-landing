@@ -296,7 +296,7 @@ nav ul li:hover {
 
 .projects{
   position: absolute;
-    bottom: -1%;
+    bottom: -1rem;
     left: 50%;
     transform: translateX(-50%);
     transition: 0.3s;
@@ -306,12 +306,21 @@ nav ul li:hover {
   color: rebeccapurple;
 }
 
-/* @media(max-width:992px){
-  .projects i{
-    display: none;
-  }
-} */
 
+
+@media(max-width:992px){
+  .projects i{
+   color:white;
+    
+  }
+  .projects{
+  position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+}
 .icons-menu{
   
     flex-direction: row !important;
@@ -425,7 +434,7 @@ margin-bottom: 2rem;
 }
 .squares2 {
   position: absolute;
-  bottom: 88%;
+  bottom: 86%;
   right: -9%;
   z-index: -1;
 }
@@ -538,6 +547,25 @@ aspect-ratio: 1/1.25;
     width: 80%;
   }
 }
+/* Contact Us Phone Number */
+
+.react-tel-input{
+  direction: ltr;
+  
+}
+.react-tel-input .form-control{
+  width: 100% !important;
+
+    border-radius: 4px !important;
+    
+    background: #ebf4f8 !important;
+    border: 1px solid #d5dee1 !important;
+    transition: outline .2s ease !important;
+    outline: none !important;
+    font-family: inherit !important;
+    resize: none !important;
+    transition: 0.3s !important;
+}
 
 
 /* Projects */
@@ -593,6 +621,8 @@ aspect-ratio: 1/1.25;
   background-color: var(--primary-color);
   font-weight: bold;
 }
+
+
 
 
 /* Footer */
@@ -873,6 +903,9 @@ direction: ltr;
 }
 
 
+
+
+
  /* img Frame */
 @keyframes img {
   0% {
@@ -931,6 +964,8 @@ direction: ltr;
 
 
 
+
+
 /* Whats APP */
 .fa-custom{
   color: white;
@@ -943,3 +978,11 @@ direction: ltr;
   border-radius: 50%;  
   box-shadow: 0 0 10px gray;
 }
+
+
+
+
+
+
+
+

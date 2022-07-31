@@ -2,6 +2,12 @@ import axios from "axios";
 import React from "react";
 import { ReactDOM } from "react";
 import { useNavigate } from "react-router-dom";
+import PhoneInput from 'react-phone-input-2';
+import "react-phone-input-2/lib/style.css";
+
+
+
+
 
 import Popup from 'reactjs-popup';
 
@@ -9,28 +15,31 @@ import Popup from 'reactjs-popup';
 export default function Contact() {
 
   
- 
+
   
+  
+ 
   const [formData, setFormData] = React.useState({
     name: "",
     email: "",
     message: "",
-    service: "",
-    phone: ""
+    service: ""
   });
   let flag = true
+  
+  const [value, setvalue] = React.useState('')
 
-  if(isNaN(formData.phone)){
+  function check(){
+	if(value === ''){
     flag = false
     document.querySelector('.enter-number').innerHTML = "رجاء ادخل رقم هاتف"
 
-  }else if(!isNaN(formData.phone) && formData.phone !== ''){
-    flag = true
-    document.querySelector('.enter-number').innerHTML = ''
-    
   }
- console.log(flag)
- console.log(formData)
+};
+   if(formData.phone !== ''){
+  flag = true
+  document.querySelector('.enter-number').innerHTML = ''
+    }
   
  let handleSubmit = async (e) => {
     
@@ -48,7 +57,13 @@ export default function Contact() {
   
    try {
     
-     let res = await axios.post("https://icom-agency.com/api/add-message",formData
+     let res = await axios.post("https://icom-agency.com/api/add-message",{
+      name:formData.name,
+      email:formData.email,
+      message: formData.message,
+      service:formData.message,
+      phone:value
+     }
       );
      if (res.status === 200) {
       console.log(res.status)
@@ -59,7 +74,7 @@ export default function Contact() {
          
        });
        document.querySelector('.clicked-button').click()
-       setTimeout(()=>window.location.replace(res.url),3000)
+       setTimeout(()=>window.location.replace("https://icom-digital.net/"),3000)
      } else {
        console.log("Some error occured");
      }
@@ -80,7 +95,7 @@ export default function Contact() {
     setFormData((prevFormData) => {
       return {
         ...prevFormData,
-        [name]: type === "checkbox" ? checked : value,
+        [name]: type === "checkbox" ? checked : value
       };
     });
   }
@@ -228,6 +243,7 @@ export default function Contact() {
               value={formData.name}
               required
             />
+             
             <label htmlFor="email" className="labels">
               البريد الالكتروني
             </label>
@@ -251,7 +267,9 @@ export default function Contact() {
               name="service"
               required
             >
-              <option value="تصميم وبرمجة مواقع الويب">تصميم وبرمجة مواقع الويب</option>
+              <option value="تصميم وبرمجة مواقع الويب">
+تصميم وبرمجة مواقع الويب
+  </option>
               <option value="تصميم وبرمجة تطبيقات الهاتف المحمول">
                 تصميم وبرمجة تطبيقات الهاتف المحمول
               </option>
@@ -268,16 +286,8 @@ export default function Contact() {
             <label htmlFor="phone" className="labels">
               رقم الجوال
             </label>
-
-            <input
-              type="tel"
-              placeholder="ادخل رقم الجوال"
-              onChange={handleChange}
-              name="phone"
-              id="phone"
-              value={formData.phone}
-              required
-            />
+            <PhoneInput value={value} onChange={setvalue}/>
+           
             <span className="enter-number">  </span>
             <label htmlFor="message" className="labels">
               الرسالة
@@ -289,7 +299,7 @@ export default function Contact() {
               id="message"
               name="message"
             />
-            <button type="submit">ارسال</button>
+            <button type="submit" id="s" onClick={check}>ارسال</button>
           </form>
         </div>
         <img
@@ -302,8 +312,8 @@ export default function Contact() {
     </div>
   );
   
-  
-
+ 
 
 
 }
+
