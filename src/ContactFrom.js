@@ -36,7 +36,7 @@ export default function Contact() {
 
   }
 };
-   if(formData.phone !== ''){
+   if(value !== ''){
   flag = true
   document.querySelector('.enter-number').innerHTML = ''
     }
