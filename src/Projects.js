@@ -10,6 +10,7 @@ import { useState } from "react";
 import Carousel from "react-elastic-carousel";
 import Item from "./components/Item";
 import "./components/styles.css"
+import "./style.css";
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
