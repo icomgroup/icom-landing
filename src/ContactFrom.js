@@ -61,7 +61,7 @@ export default function Contact() {
       name:formData.name,
       email:formData.email,
       message: formData.message,
-      service:formData.message,
+      service:formData.service,
       phone:value
      }
       );
